@@ -1,0 +1,802 @@
+ * {
+     margin: 0;
+     padding: 0;
+ }
+
+ body {
+     background-color: rgb(0, 0, 0);
+     color: white;
+     font-family: 'Playfair Display', serif;
+ }
+
+ nav {
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+     height: 60px;
+     background-color: rgb(80, 79, 79);
+ }
+
+ nav ul {
+     display: flex;
+     justify-content: center;
+ }
+
+ nav ul li {
+     list-style: none;
+     margin: 0 35px;
+     justify-content: center;
+     margin-top:8px;
+ }
+
+ nav ul li a {
+     text-decoration: none;
+     color: white;
+ }
+
+ nav ul li a:hover {
+     text-decoration: underline;
+     color: rgb(230, 149, 233);
+     font-family: 'Playfair Display', serif;
+     font-size: 1.08rem;
+     text-decoration-style: solid;
+ }
+
+ .resume-btn {
+    padding: 8px 16px;
+    border: 1px solid #9b5cff;
+    border-radius: 6px;
+    color: #9b5cff;
+    text-decoration: none;
+    transition: 0.3s ease;
+    margin-left: 40px;
+}
+
+.resume-btn:hover {
+    background: #9b5cff;
+    color: #000;
+}
+
+ .left {
+     font-size: 1.6rem;
+     font-weight: 18px;
+ }
+
+ .right {
+     font-family: 'Poppins', sans-serif;
+ }
+
+ .firstsection {
+     display: flex;
+     margin: 80px 0;
+     justify-content: space-around;
+     align-items: center;
+     height: 500px;
+     position: relative;
+     overflow: hidden;
+ }
+
+ .firstsection ::before {
+     content: "";
+     position: absolute;
+     inset: 0;
+     background: url("vec.jpg") center/cover no-repeat;
+     opacity: 0.03;
+     /* image opacity */
+     filter: grayscale(100%);
+     z-index: -1;
+ }
+
+ .firstsection>div {
+     width: 30%;
+ }
+
+ .leftsection {
+     font-size: 2.5rem;
+ }
+
+ .rightsection img {
+     border-radius: 1000%;
+ }
+
+ .name-edit {
+     color: rgb(162, 83, 236);
+     font-size: 3rem;
+ }
+
+ .interest {
+     font-size: 1.5rem;
+     color: grey;
+     justify-content: center;
+     align-items: center;
+     margin-top: 15px;
+ }
+
+ .secondsection {
+     margin: 80px 0;
+     padding: 0 80px;
+ }
+
+ .secondsection h1 {
+     font-size: 1.8rem;
+     letter-spacing: 0.7em;
+     text-align: center;
+     margin-bottom: 35px
+ }
+
+ .description {
+     padding: 30px;
+     background-color: rgb(35, 35, 35);
+     margin: 15px 0;
+     line-height: 1.5;
+     font-size: 1.0rem;
+     text-indent: 2em;
+     letter-spacing: 0.04em;
+     font-family: 'Poppins', sans-serif;
+     justify-content: center;
+ }
+
+ .thirdsection {
+     margin: 80px 0;
+     padding: 0 80px;
+ }
+
+ .thirdsection h1 {
+     font-size: 2.0rem;
+     letter-spacing: 0.7em;
+     text-align: left;
+     margin-bottom: 30px;
+     ;
+ }
+
+ /* Project 1*/
+ .projectbanner {
+     display: block;
+     position: relative;
+     height: 180px;
+     background-size: cover;
+     background-position: center;
+     text-decoration: none;
+     color: #ffff;
+     overflow: hidden;
+ }
+
+ .projectbanner::before {
+     content: "";
+     position: absolute;
+     inset: 0;
+     background: url("numet.jpg") center/cover no-repeat;
+     opacity: 0.4;
+     border-radius: 25px;
+     z-index: 0;
+ }
+
+ .projectbanner .overlay {
+     position: relative;
+     z-index: 1;
+     height: 100%;
+     padding: 2rem;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     text-align: center;
+     font-size: 1.8rem;
+
+ }
+
+ /* Title */
+ .projectbanner h3 {
+     font-size: 1.8rem;
+     margin-bottom: 0.5rem;
+     letter-spacing: 0.3em;
+ }
+
+ /* Subtitle */
+ .projectbanner .subtitle {
+     font-size: 1.2rem;
+     opacity: 0.85;
+ }
+
+ /* Hover Text */
+ .projectbanner .hovertext {
+     margin-top: 1rem;
+     font-size: 0.95rem;
+     opacity: 0;
+     transform: translateY(10px);
+     transition: opacity 0.3s ease, transform 0.3s ease;
+ }
+
+ /* Hover Effect */
+ .projectbanner:hover .hovertext {
+     opacity: 1;
+     transform: translateY(0);
+ }
+
+ /* Project 2*/
+ .projectbanner2 {
+     display: block;
+     position: relative;
+     height: 180px;
+     background-size: cover;
+     background-position: center;
+     text-decoration: none;
+     color: #ffff;
+     overflow: hidden;
+     margin: 35px 0;
+ }
+
+ .projectbanner2::before {
+     content: "";
+     position: absolute;
+     inset: 0;
+     background: url("stoqum.jpg") center/cover no-repeat;
+     opacity: 0.4;
+     border-radius: 25px;
+     z-index: 0;
+ }
+
+ .projectbanner2 .overlay {
+     position: relative;
+     z-index: 1;
+     height: 100%;
+     padding: 2rem;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     text-align: center;
+     font-size: 1.8rem;
+
+ }
+
+ /* Title */
+ .projectbanner2 h3 {
+     font-size: 1.8rem;
+     margin-bottom: 0.5rem;
+     letter-spacing: 0.3em;
+ }
+
+ /* Subtitle */
+ .projectbanner2 .subtitle {
+     font-size: 1.2rem;
+     opacity: 0.85;
+ }
+
+ /* Hover Text */
+ .projectbanner2 .hovertext {
+     margin-top: 1rem;
+     font-size: 0.95rem;
+     opacity: 0;
+     transform: translateY(10px);
+     transition: opacity 0.3s ease, transform 0.3s ease;
+ }
+
+ /* Hover Effect */
+ .projectbanner2:hover .hovertext {
+     opacity: 1;
+     transform: translateY(0);
+ }
+
+ .showmore {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+
+ .moreshow {
+     text-decoration: none;
+     color: white;
+     font-size: 1.1rem;
+     padding: 10px 20px;
+     border: 2px solid white;
+     border-radius: 5px;
+     transition: background-color 0.3s ease, color 0.3s ease;
+     margin-top: 5px;
+ }
+
+ .moreshow:hover {
+     background-color: rgb(70, 70, 70);
+     font-size: 1.15rem;
+     transition: opacity 0.5s ease, transform 0.5s ease;
+ }
+
+ /*foursection*/
+
+ .foursection {
+     margin: 80px 0;
+     padding: 0 80px;
+ }
+
+ .skills {
+     font-size: 1.8rem;
+     letter-spacing: 0.7em;
+     text-align: left;
+     margin-bottom: 40px
+ }
+
+ .skillgrid {
+     display: grid;
+     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+     gap: 40px;
+ }
+
+ .skillcard {
+     background-color: rgb(48, 48, 48);
+     padding: 30px;
+     border-radius: 20px;
+     box-shadow: 0 10px 25px rgba(168, 164, 164, 0.05);
+     transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+ }
+
+ .skillcard:hover {
+     transform: translateY(-6px);
+     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+ }
+
+ .skillcard h3 {
+     font-size: 1.25rem;
+     margin-bottom: 15px;
+     position: relative;
+     letter-spacing: 0.1em;
+ }
+
+ .skillcard h3::after {
+     content: "";
+     display: block;
+     width: 50px;
+     height: 2px;
+     background: #505050;
+     margin-top: 8px;
+ }
+
+ .skilltags {
+     display: flex;
+     flex-wrap: wrap;
+     gap: 15px;
+ }
+
+ .skilltags span {
+     padding: 8px 14px;
+     font-size: 0.9rem;
+     background: #444444;
+     border-radius: 20px;
+     white-space: nowrap;
+ }
+
+ .skilltags span.python:hover {
+     background: url("python.png") center/cover no-repeat;
+     color: black;
+     font-weight: bold;
+     transition: background 0.3s ease, color 0.3s ease;
+     opacity: 0.8;
+ }
+
+ .skilltags span.cplus:hover {
+     background: url("c++.png") center/cover no-repeat;
+     color: black;
+     font-weight: bold;
+     transition: background 0.3s ease, color 0.3s ease;
+     opacity: 0.8;
+ }
+
+ .skilltags span.java:hover {
+     background: url("java.png") center/cover no-repeat;
+     color: black;
+     font-weight: bold;
+     transition: background 0.3s ease, color 0.3s ease;
+     opacity: 0.8;
+ }
+
+ .skilltags span.numpy:hover {
+     background: url("num.jpg") center/cover no-repeat;
+     color: black;
+     font-weight: bold;
+     transition: background 0.3s ease, color 0.3s ease;
+     opacity: 0.8;
+ }
+
+ .skilltags span.matplotlib:hover {
+     background: url("mat.jpg") center/cover no-repeat;
+     color: black;
+     font-weight: bold;
+     transition: background 0.3s ease, color 0.3s ease;
+     opacity: 0.8;
+ }
+
+ .skilltags span.scipy:hover {
+     background: url("sci.png") center/cover no-repeat;
+     color: black;
+     font-weight: bold;
+     transition: background 0.3s ease, color 0.3s ease;
+     opacity: 0.8;
+ }
+
+ .skilltags span.html:hover {
+     background: url("htlm.png") center/cover no-repeat;
+     color: black;
+     font-weight: bold;
+     transition: background 0.3s ease, color 0.3s ease;
+     opacity: 0.8;
+ }
+
+ .skilltags span.css:hover {
+     background: url("css.jpg") center/cover no-repeat;
+     color: black;
+     font-weight: bold;
+     transition: background 0.3s ease, color 0.3s ease;
+     opacity: 0.8;
+ }
+
+ .skilltags span.javascript:hover {
+     background: url("jas.png") center/cover no-repeat;
+     color: black;
+     font-weight: bold;
+     transition: background 0.3s ease, color 0.3s ease;
+     opacity: 0.8;
+ }
+
+ .skilltags span.react:hover {
+     background: url("react.png") center/cover no-repeat;
+     color: black;
+     font-weight: bold;
+     transition: background 0.3s ease, color 0.3s ease;
+     opacity: 0.8;
+ }
+
+ .skilltags span.git:hover {
+     background: url("git.png") center/cover no-repeat;
+     color: black;
+     font-weight: bold;
+     transition: background 0.3s ease, color 0.3s ease;
+     opacity: 0.8;
+ }
+
+ .skilltags span.latex:hover {
+     background: url("tex.jpg") center/cover no-repeat;
+     color: black;
+     font-weight: bold;
+     transition: background 0.3s ease, color 0.3s ease;
+     opacity: 0.8;
+ }
+
+ .fivesection {
+     margin: 80px 0;
+     padding: 0 80px;
+ }
+
+ .exper {
+     font-size: 1.8rem;
+     letter-spacing: 0.7em;
+     text-align: left;
+     margin-bottom: 40px
+ }
+
+ .expcontainer {
+     display: flex;
+     flex-direction: column;
+ }
+
+ .expercard {
+     background-color: #4b4a4a;
+     border-radius: 10px;
+     padding: 30px 50px;
+     margin: 10px;
+ }
+
+ .expercard:hover {
+     transform: translateY(-4px);
+     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+ }
+
+ .expercard h3 {
+     font-size: 1.3rem;
+     margin-bottom: 8px;
+ }
+
+ .expmeta {
+     display: block;
+     color: rgb(182, 182, 182);
+     font-size: 1.0rem;
+     margin-bottom: 20px;
+ }
+
+ .expercard ul {
+     padding-left: 20px;
+ }
+
+ .expercard li {
+     margin-bottom: 12px;
+     line-height: 1.4;
+     font-size: 0.95rem;
+ }
+
+ @media (max-width: 768px) {
+     .fivesection {
+         padding: 0 30px;
+     }
+
+     .expercard {
+         padding: 25px;
+     }
+ }
+
+ .sixsection {
+     padding: 0 80px;
+     margin: 60px 0;
+ }
+
+ .edu {
+     font-size: 1.8rem;
+     letter-spacing: 0.7em;
+     text-align: left;
+     margin-bottom: 40px;
+ }
+
+ .educontainer {
+     margin-top: 60px;
+     padding-left: 40px;
+     position: relative;
+
+     color: black;
+     gap: 10px;
+ }
+
+ .educontainer::before {
+     content: "";
+     position: absolute;
+     left: 12px;
+     top: 0;
+     bottom: 0;
+     width: 2px;
+     background: #7e7e7e;
+ }
+
+ .timeline-content h3 {
+     font-size: 1.3rem;
+     margin-bottom: 8px;
+     margin-left: 20px;
+
+ }
+
+ .education-meta {
+     display: block;
+     color: rgb(97, 97, 97);
+     font-size: 1.0rem;
+     margin-bottom: 10px;
+     padding-left: 20px;
+ }
+
+ .timeline-content ul {
+     padding-left: 40px;
+ }
+
+ .timelineitem {
+     position: relative;
+     display: flex;
+     margin-bottom: 20px;
+     align-items: flex-start;
+     background: rgb(231, 231, 231);
+     border-radius: 10px;
+     padding: 30px;
+     overflow-y: hidden;
+     overflow-x: visible;
+     width: 100%;
+
+ }
+
+ .timelineitem.ongoing::after {
+     content: "";
+     position: absolute;
+     top: 0;
+     right: 0;
+     width: 55%;
+     /* controls image width */
+     height: 100%;
+     background:
+         linear-gradient(to left,
+             rgba(231, 231, 231, 0),
+             rgba(231, 231, 231, 1)),
+         url("cupic.jpg") center / cover no-repeat;
+     pointer-events: none;
+ }
+
+ .timelineitem.completed::after {
+     content: "";
+     position: absolute;
+     top: 0;
+     right: 0;
+     width: 55%;
+     /* controls image width */
+     height: 100%;
+     background:
+         linear-gradient(to left,
+             rgba(231, 231, 231, 0.0),
+             rgba(231, 231, 231, 1)),
+         url("rpmcpic.png") center / cover no-repeat;
+     pointer-events: none;
+ }
+
+ .timelineitem.school::after {
+     content: "";
+     position: absolute;
+     top: 0;
+     right: 0;
+     width: 55%;
+     /* controls image width */
+     height: 100%;
+     background:
+         linear-gradient(to left,
+             rgba(231, 231, 231, 0.0),
+             rgba(231, 231, 231, 1)),
+         url("dblpic.avif") center / cover no-repeat;
+     pointer-events: none;
+ }
+
+ .timeline-dot {
+     width: 14px;
+     height: 14px;
+     border-radius: 50%;
+     position: absolute;
+     left: -34px;
+     /* centers dot on the line */
+     top: 25px;
+     /* aligns with card header */
+ }
+
+
+ .timerow {
+     position: relative;
+     display: flex;
+     align-items: flex-start;
+     margin-bottom: 10px;
+ }
+
+ .timerow.ongoing .timeline-dot {
+     background: rgb(221, 0, 0)
+ }
+
+ .timerow.completed .timeline-dot {
+     background: rgb(0, 177, 29);
+ }
+
+ .timerow.school .timeline-dot {
+     background: rgb(0, 177, 29);
+ }
+
+ @media (max-width: 768px) {
+     .education-section {
+         padding: 0 30px;
+     }
+ }
+
+ /* Seventh Section */
+ .contact-section {
+     padding: 80px;
+     background: url("cont.jpg") center/cover no-repeat;
+     opacity: 0.95;
+     color: #000;
+ }
+
+ .contact-title {
+     font-size: 1.8rem;
+     letter-spacing: 0.7em;
+     margin-bottom: 60px;
+     color: white;
+ }
+
+ .contact-wrapper {
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+     gap: 60px;
+     align-items: center;
+ }
+
+ /* LEFT SIDE */
+ .contact-left h2 {
+     font-size: 1.6rem;
+     margin-bottom: 20px;
+     color: white;
+ }
+
+ .contact-left p {
+     color: #ffffff;
+     line-height: 1.6;
+     margin-bottom: 30px;
+ }
+
+ .contact-icons {
+     display: flex;
+     gap: 25px;
+ }
+
+ .contact-icons a img {
+     width: 32px;
+     height: 32px;
+     transition: transform 0.2s ease, opacity 0.2s ease;
+ }
+
+ .contact-icons a:hover img {
+     transform: scale(1.15);
+     opacity: 0.8;
+ }
+
+ /* RIGHT SIDE (FORM) */
+ .contact-form {
+     background: #ffffff;
+     padding: 40px;
+     border-radius: 12px;
+     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+     opacity: 0.85;
+ }
+
+ .contact-right {
+     display: flex;
+     flex-direction: column;
+     padding-right: 20px;
+ }
+
+ .contact-form input,
+ .contact-form textarea {
+     width: 100%;
+     padding: 14px;
+     margin-bottom: 20px;
+     border: 1px solid #ccc;
+     border-radius: 6px;
+     font-size: 0.95rem;
+     font-family: inherit;
+ }
+
+ .contact-form input:focus,
+ .contact-form textarea:focus {
+     outline: none;
+     border-color: #000;
+ }
+
+ .contact-form button {
+     width: 100%;
+     padding: 14px;
+     background: #000;
+     color: #c5c4c4;
+     border: none;
+     border-radius: 6px;
+     font-size: 1rem;
+     cursor: pointer;
+     transition: background 0.2s ease;
+ }
+
+ .contact-form button:hover {
+     background: #333;
+ }
+
+ /* RESPONSIVE */
+ @media (max-width: 768px) {
+     .contact-wrapper {
+         grid-template-columns: 1fr;
+     }
+
+     .contact-section {
+         padding: 60px 30px;
+     }
+ }
+
+.footer {
+    margin-top: 80px;
+    padding: 30px 20px;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #aaa;
+    border-top: 1px solid #2a2a2a;
+    background: #000;
+}
+
+ .footer p {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+ html {
+     scroll-behavior: smooth;
+
+ }
